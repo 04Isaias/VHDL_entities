@@ -8,3 +8,7 @@ binary_decoder/output_files
 *.qsf
 *.qws
 DE10_LITE_Golden_Top.v
+*.mti
+*.mpf
+*.wlf
+binary_decoder/binary_decoder_lib/
