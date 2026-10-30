@@ -1,0 +1,10 @@
+binary_decoder/db
+binary_decoder/incremental_db
+binary_decoder/output_files
+.sigasi/
+*.sigasi
+*.qdf
+*.qpf
+*.qsf
+*.qws
+DE10_LITE_Golden_Top.v
