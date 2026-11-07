@@ -11,4 +11,5 @@ binary_decoder/output_files
 *.mpf
 *.wlf
 *.bak
+barrel_shifter/work/
 binary_decoder/binary_decoder_lib/
