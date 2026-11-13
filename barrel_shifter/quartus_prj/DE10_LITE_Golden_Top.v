@@ -1,6 +1,10 @@
 // ============================================================================
 //   Ver  :| Author					:| Mod. Date :| Changes Made:
 //   V1.1 :| Alexandra Du			:| 06/01/2016:| Added Verilog file
+//		Author: Isaias M Ramirez	
+//		This is the Top file that comes with the DE10LITE development board.  
+//		I added the code to instantiate the shifter and connect it to the
+//		input switches and LEDS.
 // ============================================================================
 
 
