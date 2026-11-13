@@ -13,3 +13,14 @@ binary_decoder/output_files
 *.bak
 barrel_shifter/work/
 binary_decoder/binary_decoder_lib/
+**/db/
+
+/barrel_shifter/**
+!/barrel_shifter/**/
+!/barrel_shifter/**/*.v
+!/barrel_shifter/**/*.vhd
+
+/binary_decoder/**
+!/binary_decoder/**/
+!/binary_decoder/**/*.v
+!/binary_decoder/**/*.vhd

@@ -2,6 +2,7 @@
 -- Isaias M Ramirez
 -- The circuit described within this file is a generic binary decoder.
 -- The number of bits generic is the number of binary bits to decode. 
+-- The binary decoder asserts on of the 2^n bits in the output according to the input combination.
 library IEEE; 
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;

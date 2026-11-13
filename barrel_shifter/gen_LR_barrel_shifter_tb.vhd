@@ -8,7 +8,7 @@ end gen_LR_barrel_shifter_tb;
 
 architecture test of gen_LR_barrel_shifter_tb is
     constant barrel_bits : integer := 8;
-    constant amt_bits    : integer := 3;
+    constant amt_bits    : integer := 4;
 
     signal lr          : std_logic := '0';
     signal drop_bits   : std_logic := '0';
