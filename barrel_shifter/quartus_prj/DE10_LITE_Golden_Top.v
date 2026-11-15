@@ -127,7 +127,15 @@ module DE10_LITE_Golden_Top(
 //=======================================================
 //  constants
 //=======================================================
-localparam [9:0] led_pattern = 10'b1100000011;
+localparam [3:0] led_pattern = 4'b1011;
+localparam cBARREL_BITS  = 4;
+localparam cAMT_BTS	    = 3;
+localparam cAMT_SW_U	    = 2;
+localparam cAMT_SW_L	    = 0;
+localparam cLED_U		    = 3;
+localparam cLED_L		    = 0;
+localparam cLR_SW		    = 9;
+localparam cDROP_BITS_SW = 8;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -136,14 +144,14 @@ localparam [9:0] led_pattern = 10'b1100000011;
 //  Structural coding
 //=======================================================
 gen_LR_barrel_shifter #(
-	.barrel_bits(10),
-	.amt_bits(4)
+	.barrel_bits(cBARREL_BITS),
+	.amt_bits(cAMT_BTS)
 ) my_barrel_shifter (
-	.lr(SW[9]),
-	.drop_bits(SW[8]),
+	.lr(SW[cLR_SW]),
+	.drop_bits(SW[cDROP_BITS_SW]),
 	.binary_num(led_pattern),
-	.amt(SW[3:0]),
-	.shifted_out(LEDR[9:0])
+	.amt(SW[cAMT_SW_U:cAMT_SW_L]),
+	.shifted_out(LEDR[cLED_U:cLED_L])
 );
 
 

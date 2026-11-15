@@ -24,3 +24,8 @@ binary_decoder/binary_decoder_lib/
 !/binary_decoder/**/
 !/binary_decoder/**/*.v
 !/binary_decoder/**/*.vhd
+
+/HEX_to_seven_segment_disp/**
+!/HEX_to_seven_segment_disp/**/
+!/HEX_to_seven_segment_disp/**/*.v
+!/HEX_to_seven_segment_disp/**/*.vhd
